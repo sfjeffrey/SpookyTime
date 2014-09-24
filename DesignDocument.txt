@@ -1,24 +1,65 @@
 	Design Document
 	
-	The aim of this document is to explain design choices to illuminate the intent behind them and to demonstrate the work as an act of design itself.
+		The aim of this document is to explain design choices to illuminate the intent behind them and to demonstrate 
+		the work as an act of design itself.
 
 	Theme
 
-	The setting of the game is what I call ìironic horrorî. A watered down, ìhalloween decorationsî approach to the horror genre was taken in a deliberately condescending way. Immediately the game presumes to take itself quite seriously. With an understated title screen and dark environment, but as if to demonstrate complete ignorance of what horror actually is the title proudly declares itself as ìspookyî and reiterates with the butchered Ray Bradbury title ìSomething spooky this way comes...î as if the director (me) actually believed that the term was seriously threatening.
-	Once the game begins and the skeletons start attacking the horror of the game seems to become a bit sincere. There are malevolent undead threats bent on causing you harm, but when they get within reach of their goal they opt instead to dance in front of you, menacingly. As if to say, ìthe skeletons are scary not because they're dangerous, but because they're skeletons.î The horror then becomes an obvious laughing stock, and an obvious farce. The farce though stops when the player dies and, as it turns out, the dancing skeletons were in fact dangerous as their maniacal boogieing coaxes your own skeleton to violently burst from your skin and join in. The absurdity of the them comes full circle as the seemingly out of place self assured-ness suddenly becomes justified in the most absurd way.
+		The setting of the game is what I call ‚Äúironic horror‚Äù. A watered down, ‚Äúhalloween decorations‚Äù approach to 
+		the horror genre was taken in a deliberately condescending way. Immediately the game presumes to take itself
+		quite seriously. With an understated title screen and dark environment, but as if to demonstrate complete 
+		ignorance of what horror actually is the title proudly declares itself as ‚Äúspooky‚Äù and reiterates with the 
+		butchered Ray Bradbury title ‚ÄúSomething spooky this way comes...‚Äù as if the director (me) actually believed 
+		that the term was seriously threatening.
+		Once the game begins and the skeletons start attacking the horror of the game seems to become a bit sincere.
+		There are malevolent undead threats bent on causing you harm, but when they get within reach of their goal 
+		they opt instead to dance in front of you, menacingly. As if to say, ‚Äúthe skeletons are scary not because
+		they're dangerous, but because they're skeletons.‚Äù The horror then becomes an obvious laughing stock, and 
+		an obvious farce. The farce though stops when the player dies and, as it turns out, the dancing skeletons 
+		were in fact dangerous as their maniacal boogieing coaxes your own skeleton to violently burst from your 
+		skin and join in. The absurdity of the them comes full circle as the seemingly out of place self assured-ness
+		suddenly becomes justified in the most absurd way.
 
 	Game Play
 
-	The game is a third person survival shooter. The player contends with an ever increasing, unending threat, while juggling limited resources. There is no ìwinningî the game, but rather players are invited to survive the grave yard for as long as possible and compare scores with other players. The challenges are not in an of themselves difficult, but the increasing scale of the challenge eventually leads to even the most skilled player's loss.
+		The game is a third person survival shooter. The player contends with an ever increasing, unending threat,
+		while juggling limited resources. There is no ‚Äúwinning‚Äù the game, but rather players are invited to survive
+		the grave yard for as long as possible and compare scores with other players. The challenges are not in an
+		of themselves difficult, but the increasing scale of the challenge eventually leads to even the most skilled
+		player's loss.
 
 	The Player Character
 
-	As stated before, the challenge of the game is not difficult. Most of the difficulty comes from a very limited player character. The PC is based on myself and I asked myself what MY difficulties in this situation would actually be. First of all I'm not in the best of shape, so stamina is limited to rather short bursts and harshly punished if over used. Secondly, I do not have a magic HUD that tells me how much ammo is in my pockets. So I left it up to the player to keep track of their ammo count in their head like I would have to. I am also not a trained spetsnaz guerrilla fighter capable of doing cover vaults, tactical rolls, or even reliably operating a fire arm without a good table to lean on. So choices in terms of movement and evasion are limited to walking, running forward, and shooting more or less in the direction you're aiming.
+		As stated before, the challenge of the game is not difficult. Most of the difficulty comes from a very limited
+		player character. The PC is based on myself and I asked myself what MY difficulties in this situation would 
+		actually be. First of all I'm not in the best of shape, so stamina is limited to rather short bursts and 
+		harshly punished if over used. Secondly, I do not have a magic HUD that tells me how much ammo is in my 
+		pockets. So I left it up to the player to keep track of their ammo count in their head like I would have to.
+		I am also not a trained spetsnaz guerrilla fighter capable of doing cover vaults, tactical rolls, or even 
+		reliably operating a fire arm without a good table to lean on. So choices in terms of movement and evasion 
+		are limited to walking, running forward, and shooting more or less in the direction you're aiming.
 
 	The Gun
 
-	The ratio of the gun's spread to the skeleton's health was adjusted on purpose such that the player could kill a skeleton in a single shot if they risked exposure to their dancing or kill skeletons with multiple shots at medium range, but could not reliably snipe them from a safe distance. The game is one of maintaining a ìsweet spotî where the gun's lethality justifies ammo consumption without unduly risking the player to the skeletons.
+		The ratio of the gun's spread to the skeleton's health was adjusted on purpose such that the player could 
+		kill a skeleton in a single shot if they risked exposure to their dancing or kill skeletons with multiple 
+		shots at medium range, but could not reliably snipe them from a safe distance. The game is one of maintaining
+		a ‚Äúsweet spot‚Äù where the gun's lethality justifies ammo consumption without unduly risking the player to the 
+		skeletons.
 	The Skeletons
 
-	The skeletons spawn in waves equal to the round number, and have a finite number in each round. When the player has killed all of the skeletons the round is ends, the player is breifed on their time, and then the next round begins. 
-	Immediately I wanted the skeletons to have that malevolent appearance, later undercut by their ridiculous dancing, and finally realized by the effectiveness of their swarm tactics. At first the skeletons will merely chase directly after the player, but as the total number of skeletons increases, and the number of skeletons per wave increases the more often the player is to be flanked by them. This danger tended to diminish quickly though once all the skeletons had spawned. They were then reduced to a long ìconga lineî chasing the player until the player took too many pot shots or the player managed to kite them well enough to win the round. The solution was to give each skeleton a ìboredomî timer. A skeleton is bored when it has not gotten the opportunity to dance in 30 seconds, and this timer increases if a skeleton happens to dance for an extended period of time. This means the skeletons at the front of the line who manage to get short dance attacks off on the player will continue to do so, but the skeletons stuck in the back will eventually dive back under ground and get a chance to respawn normally and flank the player. Essentially the dangerous portion of the round where the skeletons are initially spawning never ends.
+		The skeletons spawn in waves equal to the round number, and have a finite number in each round. When the player
+		has killed all of the skeletons the round is ends, the player is breifed on their time, and then the next round
+		begins. 
+		Immediately I wanted the skeletons to have that malevolent appearance, later undercut by their ridiculous 
+		dancing, and finally realized by the effectiveness of their swarm tactics. At first the skeletons will merely
+		chase directly after the player, but as the total number of skeletons increases, and the number of skeletons 
+		per wave increases the more often the player is to be flanked by them. This danger tended to diminish quickly
+		though once all the skeletons had spawned. They were then reduced to a long ‚Äúconga line‚Äù chasing the player 
+		until the player took too many pot shots or the player managed to kite them well enough to win the round. The
+		solution was to give each skeleton a ‚Äúboredom‚Äù timer. A skeleton is bored when it has not gotten the 
+		opportunity to dance in 30 seconds, and this timer increases if a skeleton happens to dance for an extended
+		period of time. This means the skeletons at the front of the line who manage to get short dance attacks off
+		on the player will continue to do so, but the skeletons stuck in the back will eventually dive back under 
+		ground and get a chance to respawn normally and flank the player. Essentially the dangerous portion of the
+		round where the skeletons are initially spawning never ends.
