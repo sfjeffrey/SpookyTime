@@ -4,12 +4,12 @@
 var lightCom : Light;
 
 function Start () {
-	lightCom = GetComponent(Light);
+    lightCom = GetComponent(Light);
 }
 
 //Reduces the light's intensity by 1 per frame causing the appearence of bright and sudden flashes
 function Update () {
-	if (lightCom.intensity > 0) {
-		lightCom.intensity -= 1;
-	}
+    if (lightCom.intensity > 0) {
+        lightCom.intensity -= 1;
+    }
 }

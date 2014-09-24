@@ -5,7 +5,7 @@
 var velocity : float;
 var direction : Vector3;
 function Start () {
-	GetComponent(Rigidbody).AddForce (transform.TransformDirection(direction) * velocity);
+    GetComponent(Rigidbody).AddForce (transform.TransformDirection(direction) * velocity);
 }
 
 function Update () {

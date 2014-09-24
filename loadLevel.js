@@ -6,7 +6,7 @@ var level : String;
 
 //Loads the level on a mouse click
 function OnMouseUp() {
-	Debug.Log(level);
-	Application.LoadLevel(level);
+    Debug.Log(level);
+    Application.LoadLevel(level);
 
 }

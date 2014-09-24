@@ -4,6 +4,6 @@
 var textBox : TextMesh;
 var master : skeletonDropper;
 function Start () {
-	textBox.text = 'Something spooky this way comes...';
+    textBox.text = 'Something spooky this way comes...';
 
 }

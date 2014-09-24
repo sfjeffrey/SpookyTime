@@ -5,10 +5,10 @@
 var lifeTime : float = 5;
 
 function Update () {
-	//lifeTime is counted down
-	lifeTime -= Time.deltaTime;
-	//if the lifeTime reaches 0 the object disappears;
-	if (lifeTime <= 0) {
-		Destroy(transform.gameObject);
-	}
+    //lifeTime is counted down
+    lifeTime -= Time.deltaTime;
+    //if the lifeTime reaches 0 the object disappears;
+    if (lifeTime <= 0) {
+        Destroy(transform.gameObject);
+    }
 }
